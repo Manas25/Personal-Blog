@@ -10,21 +10,10 @@
 		<link rel="stylesheet" href="css/style.css">
 
 		<script type="text/javascript" src="javascript/script.js"></script>
-
-		<!--
-		function navBarFunc() {
-		    var x = document.getElementById("nav");
-		    if (x.className.indexOf("w3-show") == -1) {
-		        x.className += " w3-show";
-		    } else { 
-		        x.className = x.className.replace(" w3-show", "");
-		    }
-		}
-		</script>!-->
 	</head>
 
 	<body>
-		<div class="w3-container" style="height:100%;width:100%;position:fixed;top:0px;left:0px;margin:0px;padding:0px;">
+		<div class="w3-container animated fadeIn" style="height:100%;width:100%;position:fixed;top:0px;left:0px;margin:0px;padding:0px;">
 				
 				<div class="w3-container w3-center">
 					<img src="images/header_panel/img1.jpg" class="w3-round" style="width:100%;max-height:200px;">
@@ -54,25 +43,27 @@
 
 				<!--- RESPONSIVE NAVIGATION BAR !-->
 				<div class="w3-row w3-container w3-center" style="margin-top:10px;">
-					<a href="#">
-						<div class="w3-quarter tablink w3-bottombar w3-border-red w3-padding w3-hover-light-grey">
-								<span class="glyphicon glyphicon-home"></span>
-								<a href="#" onclick="navBarFunc()" class="w3-hide-large w3-hide-medium w3-right">
-									<span class="w3-large w3-hover-text-red">☰</span>
-								</a>
-						</div>
-					</a>
-					<a href="#" class="w3-hide-small">
-						<div class="w3-quarter tablink w3-bottombar w3-border-red w3-padding w3-hover-light-grey">
+					<div>
+						<a href="#" onclick="homeBtn()">
+							<div class="w3-quarter tablink w3-bottombar w3-border-red w3-padding w3-hover-light-grey" id="home_tab">
+									<span class="glyphicon glyphicon-home"></span>
+							</div>
+						</a>
+						<a href="#" onclick="navBarFunc()" class="w3-hide-large w3-hide-medium"style="float:right;margin-top:-40px;">
+							<div class="w3-large w3-hover-text-red">☰</div>
+						</a>
+					</div>
+					<a href="#" class="w3-hide-small" onclick="editBtn()">
+						<div class="w3-quarter tablink w3-bottombar w3-border-red w3-padding w3-hover-light-grey" style="border-right:1px solid">
 								<span class="glyphicon glyphicon-edit"></span>
 						</div>
 					</a>
-					<a href="#" class="w3-hide-small">
-						<div class="w3-quarter tablink w3-bottombar w3-border-red w3-padding w3-hover-light-grey">
+					<a href="#" class="w3-hide-small" onclick="mediaBtn()">
+						<div class="w3-quarter tablink w3-bottombar w3-border-red w3-padding w3-hover-light-grey" style="border-right:1px solid">
 								<span class="glyphicon glyphicon-expand"></span>
 						</div>
 					</a>
-					<a href="#" class="w3-hide-small">
+					<a href="#" class="w3-hide-small" onclick="configBtn()">
 						<div class="w3-quarter tablink w3-bottombar w3-border-red w3-padding w3-hover-light-grey">
 								<span class="glyphicon glyphicon-cog"></span>
 						</div>
@@ -80,15 +71,26 @@
 				</div>
 
 				<div id="nav" class="w3-container w3-hide w3-hide-large w3-hide-medium">
-					<ul class="w3-navbar w3-center-align w3-hover-light-grey">
-					    <li><a href="#"><span class="glyphicon glyphicon-edit"></span></a></li>
-					    <li><a href="#"><span class="glyphicon glyphicon-expand"></span></a></li>
-					    <li><a href="#"><span class="glyphicon glyphicon-cog"></span></a></li>
+					<ul class="w3-navbar w3-center-align w3-light-grey w3-border-red">
+					    <li><a href="#" onclick="editBtn()"><span class="glyphicon glyphicon-edit"></span></a></li>
+					    <li><a href="#" onclick="mediaBtn()"><span class="glyphicon glyphicon-expand"></span></a></li>
+					    <li><a href="#" onclick="configBtn()"><span class="glyphicon glyphicon-cog"></span></a></li>
 					  </ul>
 				</div>
 
 				<!--                 RESPONSIVE NAVIGATION BAR              !-->
+
+
+				<!-- CONTENT BOX !-->
+
+				<div class="w3-row w3-container">
+					<div class="w3-col w3-border w3-border-red w3-padding-8 w3-round" style="width:100%;padding-left:8px;">
+						<!-- CONTENT GOES HERE !-->
+							<span id="content" class="animated tada">
+
+							</span>
+					</div>
+				<div> 
 		</div>
 	</body>
-
 </html>

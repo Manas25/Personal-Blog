@@ -2,3 +2,11 @@ a.link,a:visited,a:hover,a:active{
 		cursor:default;
 		text-decoration:none;
 }
+
+/** TO AVOID TRAILING RIGHT-SIDE BORDER AFTER HOME TAB IN SMALL SCREENS **/
+/** 601px in compilance with w3-small */
+@media only screen and (min-width: 601px){ 
+	#home_tab{
+		border-right:1px solid;
+	}
+}

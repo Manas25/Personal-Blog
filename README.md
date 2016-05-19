@@ -16,3 +16,5 @@ Created Using :
   6. w3.css Framework
   7. PHP (Backend Development)
   8. MySqli Database
+
+Note : Refer to "commits.txt" for details on commits.
