@@ -1,7 +1,7 @@
 <body>
 	<!-- MAKE 1 DIV COVER WHOLE WINDOW NOT JUST VIEWPORT : 
 		style="height:100%;width:100%;position:fixed;top:0px;left:0px;" !-->
-	<div class="w3-row" style="height:100%;width:100%;background-color:rgba(0,0,0,0.7);position:fixed;top:0px;left:0px;">
+	<div class="w3-row" style="height:100%;width:100%;background-color:rgba(0,0,0,0.7);position:fixed;top:0px;left:0px;overflow:auto;">
 		<div class="w3-third w3-container"> </div>				
 		<div class="w3-third w3-container w3-center" style="margin-top:3%;margin-bottom:2%" >
 			<div class="w3-card-12 w3-white w3-padding-12 w3-round w3-animate-zoom">

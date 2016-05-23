@@ -1,6 +1,11 @@
-a.link,a:visited,a:hover,a:active{
-		cursor:default;
-		text-decoration:none;
+*{
+	cursor:default;
+	text-decoration:none;
+}
+
+a, a:hover, a:active, a:visited {
+		cursor: default;
+		text-decoration:  none;
 }
 
 /** TO AVOID TRAILING RIGHT-SIDE BORDER AFTER HOME TAB IN SMALL SCREENS **/
@@ -9,4 +14,18 @@ a.link,a:visited,a:hover,a:active{
 	#home_tab{
 		border-right:1px solid;
 	}
+}
+
+#content{
+	height:350px;
+}
+
+
+textarea {
+    width: 100%;
+    height: 100%;
+    padding: 12px 20px;
+    border-radius: 4px;
+    background-color: parent;
+    resize: none;
 }
