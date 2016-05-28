@@ -9,3 +9,9 @@
 	1. Draggable Stickey Notes
 	2. Vertically Scrollable 
 	3. Write Blog Modal Window
+
+6th Commit : 29th May '16
+	
+		1. Log In Form incorporated in Sign Up page.
+		2. Small Screen Navigation Bar.
+		3. Installation (Database Setup and Table Creation).

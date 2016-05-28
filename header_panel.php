@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/style.css">
 
-		<script type="text/javascript" src="javascript/script.js"></script>
+		<script type="text/javascript" src="javascript/frontend.js"></script>
 	</head>
 
 	<body>
@@ -44,12 +44,13 @@
 
 				<!--- RESPONSIVE NAVIGATION BAR !-->
 				<div class="w3-row w3-container w3-center" style="margin-top:10px;">
-					<div>
+					<div id="pre_primary_nav">
+						<span id="primary_nav">
 						<a href="#" onclick="homeBtn()">
 							<div class="w3-quarter tablink w3-bottombar w3-border-red w3-padding w3-hover-light-grey" id="home_tab">
 									<span class="glyphicon glyphicon-home"></span>
 							</div>
-						</a>
+						</a></span>
 						<a href="#" onclick="navBarFunc()" class="w3-hide-large w3-hide-medium"style="float:right;margin-top:-40px;">
 							<div class="w3-large w3-hover-text-red">☰</div>
 						</a>
@@ -71,20 +72,22 @@
 					</a>
 				</div>
 
-				<div id="nav" class="w3-container w3-hide w3-hide-large w3-hide-medium">
-					<ul class="w3-navbar w3-center-align w3-light-grey w3-border-red">
-					    <li><a href="#" onclick="editBtn()"><span class="glyphicon glyphicon-edit"></span></a></li>
-					    <li><a href="#" onclick="mediaBtn()"><span class="glyphicon glyphicon-expand"></span></a></li>
-					    <li><a href="#" onclick="configBtn()"><span class="glyphicon glyphicon-cog"></span></a></li>
+				<div id="nav" class="w3-container w3-hide w3-hide-large w3-hide-medium" style="margin-top:5px;margin-bottom:5px;">
+					<ul class="w3-navbar w3-center-align w3-light-grey w3-border-red" style="z-index=5">
+						<li><a href="#" onclick="homeBtn1()"><span class="glyphicon glyphicon-home"></span></a></li>
+					    <li><a href="#" onclick="editBtn1()"><span class="glyphicon glyphicon-edit"></span></a></li>
+					    <li><a href="#" onclick="mediaBtn1()"><span class="glyphicon glyphicon-expand"></span></a></li>
+					    <li><a href="#" onclick="configBtn1()"><span class="glyphicon glyphicon-cog"></span></a></li>
 					  </ul>
 				</div>
+
 
 				<!--                 RESPONSIVE NAVIGATION BAR              !-->
 
 
 				<!-- CONTENT BOX !-->
 
-				<div class="w3-row w3-container">
+				<div class="w3-row w3-container" style="margin-bottom:10px;">
 					<div id="content" class="w3-col w3-border w3-border-red w3-padding-8 w3-round" style="width:100%;padding-left:8px;">
 						<!-- CONTENT GOES HERE !-->
 							<script>
@@ -95,7 +98,7 @@
 
 				<div id="writeBlog" class="w3-modal">
 					<span onclick="document.getElementById('writeBlog').style.display='none'" class="w3-closebtn w3-hover-red w3-container w3-padding-8 w3-display-topright">&times;</span>
-					<div class="w3-modal-content w3-card-8 w3-animate-zoom w3-padding-8" style="max-width:800px;margin-bottom:20px;padding-bottom:0px;">
+					<div class="w3-modal-content w3-card-8 w3-animate-zoom w3-padding-8" style="position:relative;top:0px;max-width:800px;margin-bottom:20px;padding-bottom:0px;">
 					  	<div class="w3-container w3-center">
 					  		<img style="height:50px;margin-right:10px;" src="images/blog.png"><span class="w3-xlarge w3-text-black">Write a Blog</span>
 					  	</div>
@@ -110,7 +113,7 @@
 					    </div>
 
 					    <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
-					      <button onclick="document.getElementById('writeBlog').style.class='none'" type="button" class="w3-btn w3-red">Cancel</button>
+					      <button onclick="document.getElementById('writeBlog').style.display='none'" type="button" class="w3-btn w3-red">Cancel</button>
 					      <span class="w3-right w3-padding w3-text-blue w3-hide-small"><a href="#">View Blogs</a></span>
 					    </div>
 					</div>
