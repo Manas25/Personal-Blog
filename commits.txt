@@ -12,6 +12,12 @@
 
 6th Commit : 29th May '16
 	
-		1. Log In Form incorporated in Sign Up page.
-		2. Small Screen Navigation Bar.
-		3. Installation (Database Setup and Table Creation).
+	1. Log In Form incorporated in Sign Up page.
+	2. Small Screen Navigation Bar.
+	3. Installation (Database Setup and Table Creation).
+
+7th Commit : 1st June '16
+	
+	1. Asynchronous File Upload (Using AJAX, JQuery, PHP)
+	2. Image Preview Without Upload
+	3. Sign Up Form	
